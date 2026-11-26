@@ -1,0 +1,6 @@
+{
+  "name": "Nor Launcher",
+  "description": "One-handed Material 3 Android home-screen launcher with auto categories, custom category overrides, hidden apps, and favorites dock.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

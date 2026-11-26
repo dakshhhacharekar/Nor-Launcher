@@ -1,0 +1,155 @@
+package com.example.ui.theme
+
+import androidx.compose.material3.Typography
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
+import com.example.R
+import com.example.data.model.FontChoice
+
+val OutfitFontFamily =
+  FontFamily(
+    Font(R.font.outfit, FontWeight.Normal),
+    Font(R.font.outfit, FontWeight.Medium),
+    Font(R.font.outfit, FontWeight.SemiBold),
+    Font(R.font.outfit, FontWeight.Bold),
+  )
+
+val PlusJakartaFontFamily =
+  FontFamily(
+    Font(R.font.plus_jakarta_sans, FontWeight.Normal),
+    Font(R.font.plus_jakarta_sans, FontWeight.Medium),
+    Font(R.font.plus_jakarta_sans, FontWeight.SemiBold),
+    Font(R.font.plus_jakarta_sans, FontWeight.Bold),
+  )
+
+val SpaceGroteskFontFamily =
+  FontFamily(
+    Font(R.font.space_grotesk, FontWeight.Normal),
+    Font(R.font.space_grotesk, FontWeight.Medium),
+    Font(R.font.space_grotesk, FontWeight.SemiBold),
+    Font(R.font.space_grotesk, FontWeight.Bold),
+  )
+
+val JetBrainsMonoFontFamily =
+  FontFamily(
+    Font(R.font.jetbrains_mono, FontWeight.Normal),
+    Font(R.font.jetbrains_mono, FontWeight.Medium),
+    Font(R.font.jetbrains_mono, FontWeight.SemiBold),
+    Font(R.font.jetbrains_mono, FontWeight.Bold),
+  )
+
+fun fontFamilyFor(choice: FontChoice): FontFamily =
+  when (choice) {
+    FontChoice.OUTFIT -> OutfitFontFamily
+    FontChoice.PLUS_JAKARTA -> PlusJakartaFontFamily
+    FontChoice.SPACE_GROTESK -> SpaceGroteskFontFamily
+    FontChoice.JETBRAINS_MONO -> JetBrainsMonoFontFamily
+    FontChoice.SYSTEM -> FontFamily.SansSerif
+  }
+
+fun typographyFor(choice: FontChoice): Typography {
+  val family = fontFamilyFor(choice)
+  return Typography(
+    displayLarge =
+      TextStyle(
+        fontFamily = family,
+        fontWeight = FontWeight.Bold,
+        fontSize = 58.sp,
+        lineHeight = 64.sp,
+        letterSpacing = (-1.5).sp,
+      ),
+    headlineLarge =
+      TextStyle(
+        fontFamily = family,
+        fontWeight = FontWeight.Bold,
+        fontSize = 32.sp,
+        lineHeight = 38.sp,
+        letterSpacing = (-0.5).sp,
+      ),
+    headlineMedium =
+      TextStyle(
+        fontFamily = family,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 26.sp,
+        lineHeight = 32.sp,
+        letterSpacing = (-0.25).sp,
+      ),
+    headlineSmall =
+      TextStyle(
+        fontFamily = family,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 22.sp,
+        lineHeight = 28.sp,
+        letterSpacing = (-0.25).sp,
+      ),
+    titleLarge =
+      TextStyle(
+        fontFamily = family,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 19.sp,
+        lineHeight = 26.sp,
+        letterSpacing = 0.sp,
+      ),
+    titleMedium =
+      TextStyle(
+        fontFamily = family,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 16.sp,
+        lineHeight = 22.sp,
+        letterSpacing = 0.sp,
+      ),
+    titleSmall =
+      TextStyle(
+        fontFamily = family,
+        fontWeight = FontWeight.Medium,
+        fontSize = 14.sp,
+        lineHeight = 20.sp,
+        letterSpacing = 0.1.sp,
+      ),
+    bodyLarge =
+      TextStyle(
+        fontFamily = family,
+        fontWeight = FontWeight.Normal,
+        fontSize = 15.sp,
+        lineHeight = 22.sp,
+        letterSpacing = 0.15.sp,
+      ),
+    bodyMedium =
+      TextStyle(
+        fontFamily = family,
+        fontWeight = FontWeight.Normal,
+        fontSize = 13.sp,
+        lineHeight = 18.sp,
+        letterSpacing = 0.2.sp,
+      ),
+    labelLarge =
+      TextStyle(
+        fontFamily = family,
+        fontWeight = FontWeight.Medium,
+        fontSize = 13.sp,
+        lineHeight = 18.sp,
+        letterSpacing = 0.1.sp,
+      ),
+    labelMedium =
+      TextStyle(
+        fontFamily = family,
+        fontWeight = FontWeight.Medium,
+        fontSize = 12.sp,
+        lineHeight = 16.sp,
+        letterSpacing = 0.15.sp,
+      ),
+    labelSmall =
+      TextStyle(
+        fontFamily = family,
+        fontWeight = FontWeight.Medium,
+        fontSize = 11.sp,
+        lineHeight = 14.sp,
+        letterSpacing = 0.2.sp,
+      ),
+  )
+}
+
+val Typography = typographyFor(FontChoice.OUTFIT)

@@ -1,0 +1,531 @@
+<resources>
+    <string name="app_name">Nor Launcher</string>
+
+    <!-- Category Names -->
+    <string name="category_all">All</string>
+    <string name="category_communication">Communication</string>
+    <string name="category_internet">Internet</string>
+    <string name="category_media">Media</string>
+    <string name="category_games">Games</string>
+    <string name="category_productivity">Productivity</string>
+    <string name="category_utilities">Utilities</string>
+    <string name="category_other">Other</string>
+    <string name="category_new_chip">New</string>
+
+    <!-- Search & Dock -->
+    <string name="search_placeholder">Search apps…</string>
+    <string name="search_clear_cd">Clear search</string>
+    <string name="search_icon_cd">Search apps</string>
+    <string name="dock_empty_hint">Long-press an app to pin it here</string>
+    <string name="apps_count_format">%1$d apps</string>
+    <string name="apps_count_single">1 app</string>
+
+    <!-- App Long-Press Menu -->
+    <string name="action_pin_to_dock">Pin to dock</string>
+    <string name="action_unpin_from_dock">Unpin from dock</string>
+    <string name="action_move_to_category">Move to category…</string>
+    <string name="action_hide_app">Hide</string>
+    <string name="action_app_info">App info</string>
+    <string name="category_badge_custom">Custom</string>
+    <string name="category_badge_auto">Auto</string>
+
+    <!-- Move to Category Sheet -->
+    <string name="move_category_title">Move \"%1$s\"</string>
+    <string name="move_category_subtitle">Choose a category or create your own</string>
+    <string name="move_category_reset_auto">Reset to auto (%1$s)</string>
+    <string name="move_category_create_new">Create custom category</string>
+
+    <!-- Create / Manage Custom Category Dialog -->
+    <string name="create_category_title">New custom category</string>
+    <string name="create_category_label">Category name</string>
+    <string name="create_category_placeholder">e.g. Work, Finance, Focus</string>
+    <string name="create_category_confirm">Create</string>
+    <string name="rename_category_title">Rename category</string>
+    <string name="rename_category_confirm">Save</string>
+    <string name="manage_category_title">Manage \"%1$s\"</string>
+    <string name="manage_category_rename">Rename category</string>
+    <string name="manage_category_delete">Delete category</string>
+    <string name="delete_category_confirm_title">Delete \"%1$s\"?</string>
+    <string name="delete_category_confirm_body">Apps assigned to this category will return to their automatic category.</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_undo">Undo</string>
+    <string name="error_category_empty">Enter a category name</string>
+    <string name="error_category_duplicate">A category with that name already exists</string>
+
+    <!-- Empty & Feedback States -->
+    <string name="empty_search_title">No matching apps</string>
+    <string name="empty_search_subtitle">Try a different search term or clear the filter.</string>
+    <string name="empty_category_title">No apps in %1$s</string>
+    <string name="empty_category_subtitle">Long-press any app and choose \"Move to category…\" to place it here.</string>
+    <string name="snackbar_pinned">%1$s pinned to dock</string>
+    <string name="snackbar_unpinned">%1$s removed from dock</string>
+    <string name="snackbar_dock_full">Dock is full (max %1$d apps). Unpin one first.</string>
+    <string name="snackbar_moved">%1$s moved to %2$s</string>
+    <string name="snackbar_category_reset">%1$s restored to auto category</string>
+    <string name="snackbar_hidden">%1$s hidden</string>
+    <string name="snackbar_category_created">Created \"%1$s\"</string>
+    <string name="snackbar_category_deleted">Deleted \"%1$s\"</string>
+    <string name="snackbar_launch_failed">Unable to open %1$s</string>
+    <string name="snackbar_app_info_failed">Unable to open App info</string>
+    <string name="cd_app_icon">%1$s icon</string>
+    <string name="cd_create_category">Create custom category</string>
+
+    <!-- Hidden Apps & Authentication (Step 2) -->
+    <string name="cd_hidden_apps_button">Open hidden apps</string>
+    <string name="hidden_apps_title">Hidden apps</string>
+    <string name="hidden_apps_subtitle_locked">Protected by biometrics &amp; PIN</string>
+    <string name="hidden_apps_empty_title">No hidden apps</string>
+    <string name="hidden_apps_empty_subtitle">Long-press any app on the home screen and tap \"Hide\" to keep it here.</string>
+    <string name="action_unhide_app">Unhide</string>
+    <string name="action_lock_hidden">Lock &amp; close</string>
+    <string name="action_change_pin">Change PIN</string>
+    <string name="snackbar_unhidden">%1$s is visible again</string>
+    <string name="snackbar_pin_saved">Hidden apps PIN saved</string>
+    <string name="snackbar_pin_updated">Hidden apps PIN updated</string>
+
+    <!-- BiometricPrompt -->
+    <string name="biometric_prompt_title">Unlock Hidden Apps</string>
+    <string name="biometric_prompt_subtitle">Verify your identity to view hidden apps</string>
+    <string name="biometric_prompt_negative_pin">Use PIN</string>
+    <string name="biometric_unavailable_note">Biometrics unavailable on this device. Enter your PIN.</string>
+    <string name="biometric_not_enrolled_note">No biometrics enrolled. Enter your PIN or enroll biometrics in Settings.</string>
+    <string name="biometric_lockout_note">Biometrics temporarily locked. Use your PIN instead.</string>
+    <string name="action_use_biometrics">Use biometrics</string>
+
+    <!-- PIN Setup & Verification -->
+    <string name="pin_setup_title">Set Hidden Apps PIN</string>
+    <string name="pin_setup_subtitle">Create a 4–8 digit fallback PIN. It is salted and hashed on-device.</string>
+    <string name="pin_confirm_title">Confirm your PIN</string>
+    <string name="pin_confirm_subtitle">Re-enter your PIN to confirm.</string>
+    <string name="pin_change_title">Set a new PIN</string>
+    <string name="pin_change_subtitle">Choose a new 4–8 digit PIN for Hidden Apps.</string>
+    <string name="pin_verify_title">Enter PIN</string>
+    <string name="pin_verify_subtitle">Enter your Hidden Apps PIN to unlock.</string>
+    <string name="pin_error_too_short">PIN must be 4 to 8 digits.</string>
+    <string name="pin_error_mismatch">PINs did not match. Try again.</string>
+    <string name="pin_error_incorrect">Incorrect PIN (%1$d attempts left).</string>
+    <string name="pin_error_lockout">Too many attempts. Try again in %1$ds.</string>
+    <string name="pin_action_continue">Continue</string>
+    <string name="pin_action_unlock">Unlock</string>
+    <string name="pin_action_save">Save PIN</string>
+    <string name="pin_key_clear">Clear</string>
+    <string name="cd_pin_backspace">Delete last digit</string>
+    <string name="cd_back_button">Back</string>
+
+    <!-- Notification Dots & First-Run Access Screen (Step 3) -->
+    <string name="notification_listener_label">Nor Launcher Notification Dots</string>
+    <string name="notif_onboarding_title">Notification dots on your apps</string>
+    <string name="notif_onboarding_body">Allow Notification Access so Nor Launcher can display live unread badge counts on your home screen and app drawer icons.</string>
+    <string name="notif_onboarding_privacy">Privacy first: Nor Launcher only counts active notifications per app and never reads, stores, or shares message text.</string>
+    <string name="notif_onboarding_enable">Open Notification Access</string>
+    <string name="notif_onboarding_skip">Not now</string>
+    <string name="notif_banner_enable">Enable dots</string>
+    <string name="notif_settings_failed">Unable to open Notification Access settings</string>
+    <string name="cd_notification_badge">%1$s, %2$d unread notifications</string>
+
+    <!-- Home Screen & Swipe-Up App Drawer -->
+    <string name="home_search_prefix">Nor</string>
+    <string name="home_search_suffix">Search</string>
+    <string name="cd_home_search_bar">Search apps</string>
+    <string name="home_swipe_hint">Swipe up for apps</string>
+    <string name="cd_drawer_handle">Swipe down to return home</string>
+    <string name="home_empty_hint">Swipe up to open apps, or long-press an app to pin it here</string>
+
+    <!-- Glassy App Drawer Nav Bar & 3-Dot Menu -->
+    <string name="cd_open_play_store">Open Play Store</string>
+    <string name="cd_drawer_more_menu">Launcher menu</string>
+    <string name="cd_toggle_search">Toggle app search</string>
+    <string name="menu_hidden_apps">Hidden apps</string>
+    <string name="menu_create_category">New custom category</string>
+    <string name="menu_notification_dots">Notification dots</string>
+    <string name="menu_notification_dots_on">Enabled</string>
+    <string name="menu_notification_dots_off">Tap to enable</string>
+    <string name="menu_customize_widget">Customize home widget</string>
+    <string name="snackbar_play_store_unavailable">Play Store is not available on this device</string>
+
+    <!-- Modifiable Home Widgets -->
+    <string name="widget_customize_title">Home widget</string>
+    <string name="widget_customize_subtitle">Long-press the top widget anytime to change it</string>
+    <string name="widget_style_minimal_clock">Minimal Clock &amp; Date</string>
+    <string name="widget_style_minimal_clock_desc">Bold centered clock with live date</string>
+    <string name="widget_style_glass_card">Glass Clock &amp; Battery</string>
+    <string name="widget_style_glass_card_desc">Frosted glass card with time, date, and battery</string>
+    <string name="widget_style_compact_battery">Compact Battery &amp; Date</string>
+    <string name="widget_style_compact_battery_desc">Sleek minimal pill showing date and charge</string>
+    <string name="widget_battery_charging">Charging · %1$d%%</string>
+    <string name="widget_battery_level">Battery · %1$d%%</string>
+
+    <!-- Gestures & Accessibility Service (Step 4) -->
+    <string name="accessibility_service_label">Nor Launcher Gestures</string>
+    <string name="accessibility_service_description">Used only to perform home-screen gestures you assign, such as locking the screen or expanding notifications. Nor Launcher never reads screen content or text you type.</string>
+    <string name="menu_gestures">Gestures</string>
+    <string name="gestures_screen_title">Gestures</string>
+    <string name="gestures_screen_subtitle">Customize home-screen swipe and tap actions</string>
+    <string name="gesture_swipe_up">Swipe up</string>
+    <string name="gesture_swipe_up_desc">Drag upward from the home screen</string>
+    <string name="gesture_swipe_down">Swipe down</string>
+    <string name="gesture_swipe_down_desc">Drag downward on the home screen</string>
+    <string name="gesture_double_tap">Double-tap home</string>
+    <string name="gesture_double_tap_desc">Double-tap empty space on the home screen</string>
+
+    <string name="gesture_action_open_drawer">Open app drawer</string>
+    <string name="gesture_action_lock_screen">Lock screen</string>
+    <string name="gesture_action_open_notifications">Open notifications</string>
+    <string name="gesture_action_quick_settings">Open quick settings</string>
+    <string name="gesture_action_open_search">Open app search</string>
+    <string name="gesture_action_hidden_apps">Open hidden apps</string>
+    <string name="gesture_action_none">None</string>
+
+    <string name="gesture_picker_title">Assign action for %1$s</string>
+    <string name="gesture_badge_accessibility">Accessibility</string>
+    <string name="gesture_accessibility_card_title">Accessibility service</string>
+    <string name="gesture_accessibility_status_on">Active</string>
+    <string name="gesture_accessibility_status_off">Not enabled</string>
+    <string name="gesture_accessibility_card_body">Required for double-tap to lock screen (Android 9+) and reliable notification shade gestures. Window content access is disabled.</string>
+    <string name="gesture_accessibility_open_settings">Open Accessibility Settings</string>
+    <string name="gesture_reset_defaults">Reset defaults</string>
+    <string name="gesture_done">Done</string>
+
+    <string name="accessibility_prompt_title">Enable Accessibility for \"%1$s\"</string>
+    <string name="accessibility_prompt_body">Android requires the Nor Launcher Gestures accessibility service to perform system actions like locking the screen or opening notifications. Nor Launcher cannot read anything on your screen.</string>
+    <string name="accessibility_settings_failed">Unable to open Accessibility settings</string>
+    <string name="snackbar_lock_unsupported_api">Screen lock gesture requires Android 9 (API 28) or higher</string>
+    <string name="snackbar_gesture_failed">Unable to perform %1$s right now</string>
+    <string name="snackbar_gestures_reset">Gesture actions reset to defaults</string>
+
+    <!-- Theming & Appearance (Step 5) -->
+    <string name="drawer_search_title">Search</string>
+    <string name="menu_theming">Vibe &amp; theme</string>
+    <string name="theme_screen_title">Vibe &amp; Theme</string>
+    <string name="theme_screen_subtitle">Curate your aesthetic — palettes, fonts, icons &amp; wallpaper</string>
+    <string name="theme_section_colors">Color palette</string>
+    <string name="theme_color_material_you">Material You</string>
+    <string name="theme_color_material_you_desc">Android 12+ dynamic system colors</string>
+    <string name="theme_color_wallpaper">Wallpaper colors</string>
+    <string name="theme_color_wallpaper_desc">Extracted from your active wallpaper</string>
+    <string name="theme_color_cyber_y2k">Cyber Y2K</string>
+    <string name="theme_color_cyber_y2k_desc">Acid lime, electric cyan &amp; deep obsidian</string>
+    <string name="theme_color_matcha_cream">Matcha Cream</string>
+    <string name="theme_color_matcha_cream_desc">Ceremonial matcha, oat milk &amp; warm caramel</string>
+    <string name="theme_color_neon_berry">Neon Berry</string>
+    <string name="theme_color_neon_berry_desc">Hyper magenta, electric violet &amp; plum</string>
+    <string name="theme_color_nordic">Nordic Slate</string>
+    <string name="theme_color_nordic_desc">Crisp sky blue &amp; cool mint</string>
+    <string name="theme_color_forest">Forest Sage</string>
+    <string name="theme_color_forest_desc">Deep olive &amp; luminous lime</string>
+
+    <string name="theme_section_mode">Appearance mode</string>
+    <string name="theme_mode_system">System</string>
+    <string name="theme_mode_light">Light</string>
+    <string name="theme_mode_dark">Dark</string>
+
+    <string name="theme_section_font">Typography</string>
+    <string name="theme_font_outfit">Outfit</string>
+    <string name="theme_font_jakarta">Plus Jakarta Sans</string>
+    <string name="theme_font_space">Space Grotesk</string>
+    <string name="theme_font_jetbrains">JetBrains Mono</string>
+    <string name="theme_font_system">System Sans</string>
+
+    <string name="theme_section_icon_shape">Adaptive icon shape</string>
+    <string name="theme_shape_squircle">Squircle</string>
+    <string name="theme_shape_circle">Circle</string>
+    <string name="theme_shape_rounded">Rounded</string>
+    <string name="theme_shape_teardrop">Teardrop</string>
+
+    <string name="theme_section_display">Display</string>
+    <string name="theme_hide_system_bars">Hide system bars</string>
+    <string name="theme_hide_system_bars_desc">Immersive full-screen home (swipe edge to reveal)</string>
+    <string name="theme_reset_defaults">Reset theme</string>
+    <string name="snackbar_theme_reset">Theme reset to defaults</string>
+
+    <!-- Smarter Search (Step 6) -->
+    <string name="smart_search_placeholder">Apps, contacts, math, web…</string>
+    <string name="smart_search_hint_title">Type to search anything</string>
+    <string name="smart_search_hint_subtitle">Try an app name, contact, math like 18% * 240, or \"wifi\", \"alarm 7:30\", \"call\"</string>
+    <string name="smart_search_section_apps">Apps</string>
+    <string name="smart_search_section_calculator">Calculator</string>
+    <string name="smart_search_section_quick_actions">Quick actions</string>
+    <string name="smart_search_section_contacts">Contacts</string>
+    <string name="smart_search_section_web">Web search</string>
+    <string name="smart_search_copy_result">Copy</string>
+    <string name="smart_search_copied_result">Copied %1$s</string>
+    <string name="smart_search_web_direct">Search DuckDuckGo for \"%1$s\"</string>
+    <string name="smart_search_contacts_prompt_title">Search your contacts</string>
+    <string name="smart_search_contacts_prompt_body">Grant Contacts access to call or message people straight from search.</string>
+    <string name="smart_search_contacts_allow">Allow</string>
+    <string name="smart_search_contacts_denied_body">Contacts permission was denied. Enable it in App info to search contacts.</string>
+    <string name="smart_search_contacts_open_settings">App info</string>
+    <string name="smart_search_section_recent">Recent searches</string>
+    <string name="smart_search_clear_recent">Clear</string>
+    <string name="cd_remove_recent_search">Remove %1$s from recent searches</string>
+    <string name="snackbar_recent_searches_cleared">Recent searches cleared</string>
+    <string name="cd_call_contact">Call %1$s</string>
+    <string name="cd_message_contact">Message %1$s</string>
+    <string name="cd_close_smart_search">Close search</string>
+
+    <!-- Quick Actions -->
+    <string name="quick_action_call_title">Call</string>
+    <string name="quick_action_call_number_title">Call %1$s</string>
+    <string name="quick_action_call_subtitle">Open phone dialer</string>
+    <string name="quick_action_alarm_title">Alarms</string>
+    <string name="quick_action_alarm_time_title">Set alarm for %1$s</string>
+    <string name="quick_action_alarm_subtitle">Open Clock alarms</string>
+    <string name="quick_action_wifi_title">Wi-Fi</string>
+    <string name="quick_action_wifi_subtitle">Toggle or switch Wi-Fi networks</string>
+    <string name="quick_action_bluetooth_title">Bluetooth</string>
+    <string name="quick_action_bluetooth_subtitle">Manage paired Bluetooth devices</string>
+    <string name="quick_action_sms_title">New message</string>
+    <string name="quick_action_sms_subtitle">Open messaging app</string>
+    <string name="quick_action_settings_title">Device settings</string>
+    <string name="quick_action_settings_subtitle">Open Android system settings</string>
+    <string name="snackbar_quick_action_failed">Unable to open %1$s on this device</string>
+    <string name="snackbar_browser_unavailable">No browser found to open web search</string>
+
+    <!-- Step 7: Home Widget Stack (Clock, Weather, Battery) & Wallpaper Changer -->
+    <string name="widget_page_clock">Clock</string>
+    <string name="widget_page_weather">Weather</string>
+    <string name="widget_page_battery">Battery</string>
+    <string name="widget_swipe_hint">Swipe widget vertically</string>
+
+    <!-- Weather Widget -->
+    <string name="weather_set_location_title">Live weather</string>
+    <string name="weather_set_location_subtitle">Use your city or coarse location for live conditions</string>
+    <string name="weather_use_location">Use location</string>
+    <string name="weather_set_city">Set city</string>
+    <string name="weather_feels_like">Feels %1$s</string>
+    <string name="weather_high_low">H:%1$s  L:%2$s</string>
+    <string name="weather_humidity">%1$d%% hum</string>
+    <string name="weather_wind">%1$d km/h</string>
+    <string name="weather_city_dialog_title">Weather city</string>
+    <string name="weather_city_dialog_label">City name</string>
+    <string name="weather_city_dialog_placeholder">e.g. Mumbai, Tokyo, London</string>
+    <string name="weather_city_dialog_save">Update</string>
+    <string name="weather_error_city_not_found">Couldn\'t find that city. Check spelling or network.</string>
+    <string name="weather_error_location_unavailable">Location unavailable. Enter a city instead.</string>
+    <string name="weather_error_fetch_failed">Unable to refresh weather right now.</string>
+    <string name="weather_loading">Updating weather…</string>
+    <string name="cd_refresh_weather">Refresh weather</string>
+    <string name="cd_toggle_temp_unit">Switch temperature unit</string>
+
+    <!-- Battery Widget -->
+    <string name="battery_status_charging_ac">Charging · AC</string>
+    <string name="battery_status_charging_usb">Charging · USB</string>
+    <string name="battery_status_charging_wireless">Charging · Wireless</string>
+    <string name="battery_status_charging">Charging</string>
+    <string name="battery_status_full">Fully charged</string>
+    <string name="battery_status_discharging">On battery</string>
+    <string name="battery_temp_format">%1$.1f°C</string>
+    <string name="battery_health_good">Health: Good</string>
+    <string name="battery_health_overheat">Overheating</string>
+    <string name="battery_health_cold">Cold</string>
+
+    <!-- Wallpaper Changer -->
+    <string name="menu_wallpaper">Wallpaper</string>
+    <string name="theme_section_wallpaper">Home wallpaper</string>
+    <string name="theme_wallpaper_change">Change wallpaper</string>
+    <string name="theme_wallpaper_change_desc">Pick a gallery photo or built-in backdrop</string>
+    <string name="wallpaper_sheet_title">Home wallpaper</string>
+    <string name="wallpaper_sheet_subtitle">Choose a preset or pick any photo from your device</string>
+    <string name="wallpaper_preset_nordic">Nordic Peaks</string>
+    <string name="wallpaper_preset_cyber_mesh">Cyber Mesh</string>
+    <string name="wallpaper_preset_matcha_aura">Matcha Aura</string>
+    <string name="wallpaper_preset_midnight_vapor">Midnight Vapor</string>
+    <string name="wallpaper_preset_forest">Forest Horizon</string>
+    <string name="wallpaper_preset_aurora">Aurora Glass</string>
+    <string name="wallpaper_preset_sunset">Sunset Dunes</string>
+    <string name="wallpaper_preset_custom">Custom Photo</string>
+    <string name="wallpaper_pick_photo">Pick photo from gallery</string>
+    <string name="wallpaper_dim_label">Wallpaper dim</string>
+    <string name="wallpaper_apply_system">Set as Android wallpaper too</string>
+    <string name="wallpaper_open_system_picker">System wallpaper picker</string>
+    <string name="snackbar_wallpaper_updated">Wallpaper updated</string>
+    <string name="snackbar_wallpaper_system_applied">Applied to Android home wallpaper</string>
+    <string name="snackbar_wallpaper_failed">Unable to load selected photo</string>
+    <string name="snackbar_system_wallpaper_failed">Unable to apply system wallpaper</string>
+
+    <!-- Step 8: Real Android AppWidget Hosting -->
+    <string name="menu_add_widget">Add widget</string>
+    <string name="widget_add_android_widget">Add Android widget</string>
+    <string name="widget_add_android_widget_desc">Place live widgets from your installed apps on Home</string>
+    <string name="widget_picker_title">Add widget</string>
+    <string name="widget_picker_subtitle">Choose any installed Android widget to host on Home</string>
+    <string name="widget_picker_search_placeholder">Search widgets or apps…</string>
+    <string name="widget_picker_loading">Loading installed widgets…</string>
+    <string name="widget_picker_empty">No widgets match your search</string>
+    <string name="widget_picker_count_one">1 widget</string>
+    <string name="widget_picker_count_many">%1$d widgets</string>
+    <string name="widget_picker_size_cells">%1$d × %2$d</string>
+    <string name="widget_edit_resize_label">Resize &amp; manage</string>
+    <string name="widget_width_half">Half</string>
+    <string name="widget_width_wide">Wide</string>
+    <string name="widget_width_full">Full</string>
+    <string name="widget_height_dp">%1$ddp</string>
+    <string name="widget_action_configure">Configure</string>
+    <string name="widget_action_remove">Remove</string>
+    <string name="widget_action_done">Done</string>
+    <string name="widget_unavailable_label">Widget unavailable</string>
+    <string name="cd_widget_shorter">Decrease widget height</string>
+    <string name="cd_widget_taller">Increase widget height</string>
+    <string name="cd_widget_move_up">Move widget up</string>
+    <string name="cd_widget_move_down">Move widget down</string>
+    <string name="cd_widget_configure">Configure widget</string>
+    <string name="cd_widget_remove">Remove widget</string>
+    <string name="cd_widget_edit_done">Finish editing widget</string>
+    <string name="snackbar_widget_added">Added %1$s widget</string>
+    <string name="snackbar_widget_removed">Removed widget</string>
+    <string name="snackbar_widget_bind_denied">Widget bind permission was denied</string>
+    <string name="snackbar_widget_configure_canceled">Widget setup canceled</string>
+    <string name="snackbar_widget_bind_failed">Unable to bind widget on this device</string>
+    <string name="snackbar_widget_limit_reached">Up to %1$d home widgets can be hosted at once</string>
+
+    <!-- Step 9: Icon Packs -->
+    <string name="menu_icon_pack">Icon pack</string>
+    <string name="theme_section_icon_pack">Icon pack</string>
+    <string name="theme_icon_pack_default">System default</string>
+    <string name="theme_icon_pack_default_desc">Use each app\'s original icon</string>
+    <string name="icon_pack_sheet_title">Icon pack</string>
+    <string name="icon_pack_sheet_subtitle">Apply icons from any installed icon pack (appfilter.xml)</string>
+    <string name="icon_pack_loading">Scanning installed icon packs…</string>
+    <string name="icon_pack_mapped_count">%1$d icons mapped</string>
+    <string name="icon_pack_empty_title">No icon packs installed</string>
+    <string name="icon_pack_empty_body">Install any standard Android icon pack (Nova, Smart Launcher, or ADW compatible) and tap Refresh to apply it here.</string>
+    <string name="icon_pack_browse_play_store">Browse on Play Store</string>
+    <string name="icon_pack_refresh">Refresh</string>
+    <string name="snackbar_icon_pack_applied">Applied %1$s icon pack</string>
+    <string name="snackbar_icon_pack_default">Restored default app icons</string>
+    <string name="snackbar_icon_pack_uninstalled">Icon pack removed — restored default icons</string>
+    <string name="snackbar_icon_pack_load_failed">Couldn\'t load icon pack — restored default icons</string>
+
+    <!-- Step 10: News Feed (RSS Reader + WorkManager) -->
+    <string name="news_page_title">Briefing</string>
+    <string name="news_page_subtitle_never">Pull to fetch headlines</string>
+    <string name="news_page_subtitle_just_now">Updated just now</string>
+    <string name="news_page_subtitle_mins_ago">Updated %1$dm ago</string>
+    <string name="news_page_subtitle_hours_ago">Updated %1$dh ago</string>
+    <string name="news_page_subtitle_syncing">Refreshing feeds…</string>
+    <string name="news_topic_all">All</string>
+    <string name="news_topic_india">India</string>
+    <string name="news_topic_tech">Tech</string>
+    <string name="news_topic_world">World</string>
+    <string name="news_topic_business">Business</string>
+    <string name="news_topic_science">Science</string>
+    <string name="news_topic_sports">Sports</string>
+    <string name="news_topic_entertainment">Entertainment</string>
+    <string name="news_topic_custom">Custom</string>
+    <string name="news_action_refresh">Refresh headlines</string>
+    <string name="news_action_sources">Personalize news</string>
+    <string name="news_action_return_home">Home</string>
+    <string name="news_action_share">Share article</string>
+    <string name="news_empty_title">No stories yet</string>
+    <string name="news_empty_body">Connect to the internet and refresh, or adjust your channels and context.</string>
+    <string name="news_empty_no_sources_title">No channels selected</string>
+    <string name="news_empty_no_sources_body">Pick at least one news channel in Personalize to see headlines here.</string>
+    <string name="news_empty_topic_body">No recent stories match this context right now. Try switching to All or refreshing.</string>
+    <string name="news_empty_keywords_body">No headlines matched your focus keywords. Turn off strict keyword filter or broaden your keywords.</string>
+    <string name="news_btn_retry">Refresh now</string>
+    <string name="news_btn_manage_sources">Personalize</string>
+    <string name="news_btn_clear_strict">Show all stories</string>
+    <string name="news_time_just_now">Just now</string>
+    <string name="news_time_minutes">%1$dm</string>
+    <string name="news_time_hours">%1$dh</string>
+    <string name="news_time_days">%1$dd</string>
+    <string name="news_for_you_badge">Matches \"%1$s\"</string>
+    <string name="news_setup_badge">Personalized briefing</string>
+    <string name="news_setup_title">Make this feed yours</string>
+    <string name="news_setup_subtitle">Choose the contexts you care about and the news channels you trust.</string>
+    <string name="news_setup_step_context">1. Choose your contexts</string>
+    <string name="news_setup_step_keywords">2. Optional focus context (keywords)</string>
+    <string name="news_setup_keywords_placeholder">e.g. IPL, AI, startups, gaming, anime</string>
+    <string name="news_trending_keywords_hint">Quick picks</string>
+    <string name="news_setup_keywords_add">Add</string>
+    <string name="news_setup_step_channels">3. Choose your news channels</string>
+    <string name="news_setup_channels_hint">Showing channels for your selected contexts (%1$d selected)</string>
+    <string name="news_setup_show_all_channels">Show all channels</string>
+    <string name="news_setup_start_button">Start my Briefing</string>
+    <string name="news_setup_validation_hint">Pick at least 1 context and 1 channel to continue</string>
+    <string name="news_sources_sheet_title">Personalize Briefing</string>
+    <string name="news_sources_sheet_subtitle">Choose contexts, focus keywords &amp; channels (auto-syncs every 30 min)</string>
+    <string name="news_sources_section_contexts">Your contexts</string>
+    <string name="news_sources_section_keywords">Focus keywords</string>
+    <string name="news_sources_strict_keywords_label">Only show stories matching focus keywords</string>
+    <string name="news_sources_section_channels">News channels</string>
+    <string name="news_sources_add_section">Add custom RSS / Atom channel</string>
+    <string name="news_sources_name_label">Channel name</string>
+    <string name="news_sources_name_placeholder">e.g. Android Developers</string>
+    <string name="news_sources_url_label">RSS or Atom URL</string>
+    <string name="news_sources_url_placeholder">https://example.com/feed.xml</string>
+    <string name="news_sources_context_label">Channel context</string>
+    <string name="news_sources_add_button">Add channel</string>
+    <string name="news_sources_error_empty_name">Enter a channel name</string>
+    <string name="news_sources_error_invalid_url">Enter a valid http:// or https:// feed URL</string>
+    <string name="news_sources_error_duplicate">This feed URL is already in your list</string>
+    <string name="news_sources_remove_cd">Remove custom channel</string>
+    <string name="news_keyword_remove_cd">Remove focus keyword %1$s</string>
+    <string name="news_home_indicator_cd">Swipe right for News feed</string>
+    <string name="snackbar_news_personalized">Your personalized Briefing is ready</string>
+    <string name="snackbar_news_refreshed">Headlines updated</string>
+    <string name="snackbar_news_refresh_failed">Couldn\'t refresh feeds — showing cached headlines</string>
+    <string name="snackbar_news_source_added">Added %1$s</string>
+    <string name="snackbar_news_source_removed">Removed %1$s</string>
+    <string name="snackbar_news_open_failed">Couldn\'t open article link</string>
+
+    <!-- Full Smart Widgets Pack (Analog Clock, Music, Calendar, Note, Icon Group, Stack Hub) -->
+    <string name="widget_style_analog_clock">Analog Clock</string>
+    <string name="widget_style_analog_clock_desc">Live circular clock face with smooth hands and date</string>
+    <string name="widget_page_music">Music</string>
+    <string name="widget_page_calendar">Calendar</string>
+    <string name="widget_page_note">Quick Note</string>
+    <string name="widget_page_icon_group">Icon Group</string>
+
+    <string name="widget_music_idle_title">Nothing playing</string>
+    <string name="widget_music_idle_subtitle">Tap play to resume or open a music app</string>
+    <string name="widget_music_active_fallback">Media playing</string>
+    <string name="widget_music_enable_info">Enable live track info</string>
+    <string name="cd_music_previous">Previous track</string>
+    <string name="cd_music_play">Play</string>
+    <string name="cd_music_pause">Pause</string>
+    <string name="cd_music_next">Next track</string>
+    <string name="snackbar_music_app_unavailable">No music app found on this device</string>
+
+    <string name="widget_calendar_title">Upcoming events</string>
+    <string name="widget_calendar_permission_body">Grant Calendar access to preview today\'s schedule right here.</string>
+    <string name="widget_calendar_allow_button">Allow Calendar</string>
+    <string name="widget_calendar_open_button">Open Calendar</string>
+    <string name="widget_calendar_empty_title">All clear ahead</string>
+    <string name="widget_calendar_empty_subtitle">No upcoming events in the next 7 days</string>
+    <string name="widget_calendar_all_day">All day</string>
+    <string name="widget_calendar_events_count_one">1 event</string>
+    <string name="widget_calendar_events_count_many">%1$d events</string>
+    <string name="cd_refresh_calendar">Refresh calendar events</string>
+    <string name="snackbar_calendar_unavailable">No calendar app found on this device</string>
+    <string name="snackbar_calendar_permission_denied">Calendar permission denied — enable it in App info to show events</string>
+
+    <string name="widget_note_default_title">Quick note</string>
+    <string name="widget_note_empty_body">Tap to drop a quick note, checklist, or vibe check…</string>
+    <string name="widget_note_dialog_title">Edit Quick Note</string>
+    <string name="widget_note_title_label">Note title</string>
+    <string name="widget_note_body_label">Write something…</string>
+    <string name="widget_note_save">Save</string>
+    <string name="widget_note_clear">Clear</string>
+    <string name="snackbar_note_saved">Note saved</string>
+
+    <string name="widget_icon_group_title">Icon Group</string>
+    <string name="widget_icon_group_edit_cd">Customize Icon Group apps</string>
+    <string name="widget_icon_group_empty">Tap the edit button to choose apps for this group</string>
+    <string name="widget_icon_group_picker_title">Choose Icon Group apps</string>
+    <string name="widget_icon_group_picker_subtitle">Pick up to %1$d apps (%2$d selected)</string>
+    <string name="widget_icon_group_save">Save group</string>
+    <string name="snackbar_icon_group_saved">Icon group updated</string>
+
+    <string name="widget_hub_section_clock">Clock face style</string>
+    <string name="widget_hub_section_stack">Smart Widget Stack</string>
+    <string name="widget_hub_section_stack_hint">Toggle or reorder widgets inside the swipeable top stack</string>
+    <string name="widget_hub_section_pinned">Pin to Home Screen</string>
+    <string name="widget_hub_section_pinned_hint">Show standalone smart widgets directly below the stack</string>
+    <string name="widget_hub_pinned_badge">Pinned</string>
+    <string name="widget_hub_pin_action">Pin</string>
+    <string name="widget_hub_unpin_cd">Remove pinned widget</string>
+    <string name="snackbar_smart_widget_pin_limit">You can pin up to %1$d standalone smart widgets</string>
+    <string name="snackbar_widget_allocate_failed">Unable to allocate widget slot on this device</string>
+</resources>
